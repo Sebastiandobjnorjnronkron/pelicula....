@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de peliculas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎬 Lista de Peliculas</h1>
+
+      <div class="filter">
+        <label>Filtrar por categoría: </label>
+        <select id="categoryFilter">
+          <option value="Todas">Todas</option>
+          <option value="Acción">Acción</option>
+          <option value="Animación">Animación</option>
+          <option value="Drama">Drama</option>
+        </select>
+      </div>
+
+      <div id="movieList" class="movie-list"></div>
+
+      <h2>📍 Contacto y Ubicación</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086131020791!2d-122.41941548468118!3d37.77492977975962"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
